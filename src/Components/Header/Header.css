@@ -1,0 +1,173 @@
+.header {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    margin: 5px 0px 35px 0px;
+    padding: 10px 50px;
+}
+
+.header .logo {
+    width: 9%;
+}
+
+.logo img {
+    width: 100%;
+    display: block;
+}
+
+.header .serachBar {
+    width: 30%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.serachBar input {
+    outline: none;
+    border: none;
+    border-radius: 21px;
+    padding: 12px 38px;
+    margin: 10px 10px;
+    background-color: #f5f3f3;
+    width: 80%;
+    font-size: 13.333px;
+    line-height: normal;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.searchIcon {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+.Menu {
+    width: 30%;
+}
+
+.Menu ul {
+    list-style: none;
+}
+
+.Menu ul li {
+    display: inline;
+    padding: 4px 10px;
+
+}
+
+.Menu ul li a {
+    text-decoration: none;
+    color: rgb(17, 24, 39);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+
+.Menu ul li a i {
+    font-size: 10px;
+    padding: 0px 8px;
+}
+
+.Menu .icon {
+    display: none;
+}
+
+.Button-section {
+    width: 18%;
+}
+
+.Button-section .logIn {
+    border: none;
+    padding: 10px 22px;
+    background-color: white;
+    color: rgb(31, 41, 55);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.Button-section .Signup {
+    border-radius: 25px;
+    background-image: linear-gradient(129.23deg, #ff3d53 -4.85%, #9317ce 169.95%);
+    padding: 10px 22px;
+    color: white;
+    border: none;
+}
+
+.BarMenu {
+    display: none;
+}
+
+
+@media screen and (max-width: 480px) {
+    .header {
+        display: block;
+        position: relative;
+    }
+
+    .header .logo {
+        width: 40%;
+    }
+
+    .header .serachBar {
+        display: contents;
+    }
+
+    .searchIcon {
+        top: 93px;
+        left: 70px;
+    }
+
+    .Button-section .Signup {
+        position: absolute;
+        top: 18px;
+        padding-bottom: 15px;
+        right: 40px;
+    }
+
+    .Button-section .logIn {
+        border-radius: 25px;
+        background-image: linear-gradient(129.23deg, #ff3d53 -4.85%, #9317ce 169.95%);
+        padding: 8px 22px;
+        color: white;
+        border: none;
+        top: 20px;
+        position: absolute;
+        right: 145px
+    }
+
+    .Button-section img {
+        display: none;
+    }
+
+    .BarMenu {
+        display: block;
+        top: 35px;
+        position: absolute;
+        left: 25px;
+
+    }
+
+    .Menu ul li a {
+        display: none;
+    }
+
+    .Menu ul li a.active {
+        display: block;
+    }
+
+    .Menu.responsive {
+        flex-direction: column;
+    }
+
+    .Menu.responsive a {
+        display: block;
+        text-align: left;
+    }
+
+}

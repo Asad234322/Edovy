@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  background-color: #f5f3f3;
+  position: relative;
+}
+.container .main-container {
+  width: 92%;
+  margin: 0 auto;
+
+
+}

@@ -1,0 +1,217 @@
+.Banner {
+    width: 100%;
+    height: auto;
+}
+
+.Banner img {
+    border-radius: 25px;
+    display: block;
+    width: 100%;
+}
+
+.howItWork {
+    width: 100%;
+    text-align: center;
+    padding: 60px 0px;
+    background-color: #f5f3f3;
+}
+.howItWork h2{
+    font-family: Gilroy, Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    color: rgb(17, 24, 39);
+}
+
+.findcourse {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    gap: 10%;
+    background-color: #fbf7f7;
+    border-radius: 25px;
+}
+
+.findcourse .text-section {
+    display: flex;
+    width: 25%;
+    gap: 5%;
+    margin: 0px 10px;
+}
+
+.text-section .img-icon {
+    width: 40%;
+    margin: 30px 0px;
+}
+.content-text h3{
+    font-family: Gilroy, Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22.5px;
+    color: rgb(31, 41, 55);
+}
+.content-text p{
+    font-family: nter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(31, 41, 55);
+}
+
+.img-icon img {
+    display: block;
+    width: 100%;
+}
+
+.common-section {
+    padding: 20px 20px;
+}
+.common-section h2{
+    font-family: Gilroy, Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(17, 24, 39);
+}
+.common-section p {
+    font-size: 19px;
+}
+
+.category {
+    display: flex;
+    padding: 20px 10px;
+    flex-wrap: wrap;
+
+}
+
+.category .nameofCategory {
+    background-color: #f3eaea;
+    border-radius: 15px;
+    padding: 10px 15px;
+    margin: 10px 17px;
+}
+
+.category :hover {
+    color: blue;
+    background-color: #f5f3f3;
+
+}
+
+.nameofCategory span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+
+
+
+
+.images-container {
+    display: flex;
+    max-width: 100%;
+    overflow: scroll;
+    /* Add the following lines for smooth scrolling */
+    scroll-behavior: smooth;
+    transition: scroll 0.3s ease-in-out;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.nav-btn {
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #c3c3c3;
+    border-radius: 6px;
+    height: 200px;
+    width: 30px;
+    margin: 5px;
+}
+
+.footer {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    gap: 2%;
+}
+
+
+.col {
+    width: 18%;
+}
+.col h3{
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.col .appStare {
+    width: 50%;
+    padding-top: 10px;
+    display: block;
+}
+
+.col span {
+    display: block;
+    padding: 7px 0px;
+    font-family:  Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.bottomBTN{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+.bottomBTN i{
+    background-color: rgb(255, 0, 140);
+    font-size: 27px;
+    color: white;
+    padding: 12px 12px;
+    border-radius: 30px;
+}
+
+
+@media screen and (max-width: 480px) {
+    .findcourse {
+        flex-direction: column;
+    }
+
+    .findcourse .text-section {
+        width: auto;
+    }
+    .category .nameofCategory{
+        padding: 5px 10px;
+    }
+    .nameofCategory span{
+        font-size: 12px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer .col{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .col .appStare{
+        margin: 0 auto;
+    }
+    .col span{
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .howItWork{
+        padding: 2px 0px;
+    }
+}
